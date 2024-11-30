@@ -1,0 +1,12 @@
+linters-settings:
+  custom:
+    linter2:
+      type: module
+      description: The description of the linter2
+      settings: # Settings are optional.
+        one: Foo
+
+linters:
+  disable-all: true
+  enable:
+    - linter2

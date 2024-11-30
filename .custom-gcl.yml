@@ -1,0 +1,11 @@
+version: v1.57.0
+plugins:
+  # a plugin from a Go proxy
+  - module: github.com/suzuito/linter1
+    import: github.com/suzuito/linter1/linter2/plugin/golangci-lint
+    version: main
+  # a plugin from local source
+  # ../linter1 というパスに github.com/suzuito/linter1 があるという前提
+  # - module: github.com/suzuito/linter1
+  #   import: github.com/suzuito/linter1/linter2/plugin/golangci-lint
+  #   path: ../linter1
